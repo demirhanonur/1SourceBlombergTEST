@@ -91,7 +91,7 @@
 			"label":"Chat Source",
 			"value": "Contact Us",
 			"transcriptFields": ["ARC_Chat_Source__c"],
-			"displayToAgent": false									  
+			"displayToAgent": true									  
 		}]; 
 		
 		embedded_svc.settings.extraPrechatInfo = [{
@@ -119,6 +119,12 @@
 			"fieldName":"Email",
 			"isExactMatch":true,
 			"label":"Email"
+		  },{
+			"doCreate":false,
+			"doFind":true,
+			"fieldName":"Chat Source",
+			"isExactMatch":true,
+			"label":"Chat Source"
 		  }],
 		  "entityName":"Contact",
 		  "saveToTranscript":"Contact",
